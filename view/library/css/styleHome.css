@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+*{padding: 0; margin: 0}
+
+.btn-sm, .btn-group-sm > .btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem; }
+
+div#postHome{width: 100%; min-height: 300px; border:1px solid #eee; padding: 15px; margin-bottom: 10px}
+div#postHome img{width: 540px; height: 300px; margin-top: 10px}
+div#postHome h2{ width: 100%; background-color: #eee; margin: 5px}
+div#postHome h2{font-family: 'Dosis', sans-serif; font-size: 24px; padding: 10px}
+div#postHome .contents{padding: 10px; margin: 0 5px}
+div#postHome .social{height: 50px; background-color: #eee;}
+div#postHome .social ul {list-style: none}
+div#postHome .social li {padding: 10px 5px; display: block; list-style: inline; float: right; }
+div#postHome .social li a{font-family: 'Dosis', sans-serif; }
