@@ -87,7 +87,8 @@ class ProjectsDAO extends Projects{
 	public function listProject(){
 		try {
 			$sql = new SQL();
-			$statement = $sql->query("SELECT * FROM FB_PROJECTS WHERE project_user = '$_SESSION[logUser]'");
+			$id = $_SESSION['logUser']->user_id;
+			$statement = $sql->query("SELECT * FROM FB_PROJECTS WHERE project_user = '$id'");
 			$result = $statement->fetchAll(PDO::FETCH_ASSOC);
 			return $result;	
 		} catch (Exception $e) {

@@ -90,9 +90,9 @@ class UserDAO extends User{
 					':PASSWORD'=>hash_hmac('sha256', $password, 'secret')
 				));
 
-			$result  = $statement->fetchAll(PDO::FETCH_ASSOC);			
+			$result  = $statement->fetchAll(PDO::FETCH_OBJ);			
 			foreach($result as $ln);
-			$_SESSION['logUser'] = $ln['user_id'];		
+			$_SESSION['logUser'] = $ln;		
 
 			if($result != null){									
 				return $_SESSION['authUser'] = "true";						

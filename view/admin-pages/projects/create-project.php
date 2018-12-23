@@ -35,7 +35,7 @@ if(verifyAuthUser()){
 			</div>
 			<div class="col s12">
 				<h4>Ações</h4>
-				<input type="hidden" name="iduser" value="<?=$_SESSION['logUser']?>">
+				<input type="hidden" name="iduser" value="<?=$_SESSION['logUser']->user_id;?>">
 				<button class="btn waves-effect waves-light" type="submit">
 					Enviar
 				</button>

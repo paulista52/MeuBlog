@@ -26,11 +26,13 @@ if(verifyAuthUser()){
 				</div>
 			</div>
 			<div class="col s6">
+				<?php if($_SESSION['logUser']->user_type == 'administrador'){ ?>
 				<div class="collection">
 					<h6 class="center">Categorias</h6>
 					<a href="<?php echo siteURL(); ?>/create/category" class="collection-item">Criar categoria</a>
 					<a href="<?php echo siteURL(); ?>/list/category" class="collection-item">Listar categorias</a>
 				</div>
+				<?php } ?>
 			</div>
 			<div class="col s6">
 				<div class="collection">
@@ -40,11 +42,13 @@ if(verifyAuthUser()){
 				</div>
 			</div>
 			<div class="col s6">
+				<?php if($_SESSION['logUser']->user_type == 'administrador'){ ?>
 				<div class="collection">
 					<h6 class="center">Usuários</h6>
 					<a href="<?php echo siteURL(); ?>/create/user" class="collection-item">Criar usuário</a>
 					<a href="<?php echo siteURL(); ?>/list/user" class="collection-item">Listar usuários</a>
 				</div>
+				<?php } ?>				
 			</div> 
 		</div>	
 	</div>

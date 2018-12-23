@@ -9,8 +9,7 @@ if(verifyAuthUser()){
 	<?php 
 	// Bring all projects
 	// Instancing the class ProjectsDAO
-	$p = new ProjectsDAO();
-	
+	$p = new ProjectsDAO();	
 	$results = $p->listProject();
 	// Getting the information the post has been deleted,updated,created.
 	$message = filter_input(INPUT_GET,'info');

@@ -69,7 +69,8 @@ class PostsDAO extends Posts{
 	public function listPost(){
 		try {
 			$sql = new SQL();
-			$statement = $sql->query("SELECT * FROM FB_POST");
+			$id = $_SESSION['logUser']->user_id;
+			$statement = $sql->query("SELECT * FROM FB_POST WHERE post_user = '$id'");
 			$result = $statement->fetchAll(PDO::FETCH_ASSOC);
 			return $result;	
 		} catch (Exception $e) {
