@@ -14,6 +14,11 @@ if(verifyAuthUser()){
 				<h6>Visitas hoje: <strong>será integrado com o analytics</strong></h6> 
 				<h6>Visitas totais:	<strong>será integrado com o analytics</strong></h6> 
 			</div>
+
+			<div class="col s6">	
+				<h5>Usuário: <?=$_SESSION['logUser']->user_name?> </h5>
+			</div>
+
 		</div>
 	</div>
 	<div class="row">
